@@ -1,0 +1,116 @@
+ 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --bg-main: #0b1220;
+  --bg-sidebar: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-soft: #24324a;
+  --primary: #6366f1;
+  --primary-soft: #818cf8;
+  --success: #22c55e;
+  --warning: #f97316;
+  --danger: #ef4444;
+
+  /* ===== Text ===== */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-soft: #cbd5f5;
+
+  /* ===== Border & Radius ===== */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  /* ===== Shadows ===== */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  /* ===== Spacing ===== */
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.sidebar{
+  width: 240px;
+  padding: 20px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--bg-sidebar);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .customer-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  margin: 15px 0;
+}
+
+.sidebar .customer-info img{
+  max-width: 40px;
+}
+
+.customer-info .customer-contant h3{
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.customer-info .customer-contant p{
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.sidebar ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar ul li{
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sidebar ul li.active {
+  background: var(--primary);
+  color: white;
+}
+
+.sidebar button{
+  width: 90%;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
