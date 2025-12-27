@@ -392,6 +392,7 @@ li input:checked + .list-title p{
 .status input[type="range"] {
   width: 100%;
   accent-color: var(--primary);
+  pointer-events: none;
 }
 
 .weekly-goal p{
