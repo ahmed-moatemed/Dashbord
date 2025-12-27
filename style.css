@@ -116,9 +116,9 @@ body {
 }
 
 main{
-  /* margin-left: 260px;
-  padding: 20px; */
-  height: 100vh;
+  margin-left: 260px;
+  /* padding: 20px; 
+  height: 100vh;  */
 }
 
 main header{
@@ -126,7 +126,7 @@ main header{
   justify-content: space-between;
   align-items: center;
   margin-top: 15px; 
-  margin-left: 260px;
+  /* margin-left: 260px; */
 }
 
 .header-name p{
@@ -183,7 +183,7 @@ main header{
 }
 
 .cards{
-  margin-left: 250px;
+  /* margin-left: 250px; */
   margin-top: 20px;
   padding: 10px;
   display: flex;
@@ -230,10 +230,15 @@ main header{
   font-size: 25px;
 }
 
+.tasks-cards{
+  display: flex;
+  gap: 15px;
+}
+
 .tasks{
-  margin-left: 260px;
+  /* margin-left: 260px; */
   padding: 20px;
-  width: 50%;
+  width: 65%;
   background: var(--bg-card-soft);
   border-radius: 30px;
 }
@@ -310,4 +315,86 @@ li input:checked + .list-title h4{
 
 li input:checked + .list-title p{
   color: var(--text-muted);
+}
+
+.avatar{
+  background: var(--primary);
+  border-radius: 30px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar .avatar-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar .avatar-image img{
+  width: 50%;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.avatar h2{
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.avatar p{
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.avatar button{
+  width: 90%;
+  background-color: var(--primary-soft);
+  border: none;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--text-main);
+}
+
+.status{
+  background-color: var(--bg-card-soft);
+  border-radius: 30px;
+  height: 200px;
+  padding: 25px;
+  margin-top: 10px;
+}
+
+.status h3{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.status .weekly-goal{
+  margin-top: 15px;
+}
+
+.status .weekly-goal .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weekly-goal .title h4{
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.status input[type="range"] {
+  width: 100%;
+  accent-color: var(--primary);
+}
+
+.weekly-goal p{
+  color: var(--text-muted);
+  font-size: 10px;
 }
