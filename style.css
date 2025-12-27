@@ -180,3 +180,51 @@ main header{
   margin-top: 20px;
   border: 0.1px solid var(--text-muted);
 }
+
+.cards{
+  margin-left: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards .card{
+  width: 32%;
+  height: 140px;
+  background: var(--bg-card-soft);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card i{
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.card .fa-clipboard{
+  color: var(--danger);
+}
+
+.card .fa-bolt{
+  color: rgba(0, 191, 255, 0.604);
+}
+
+.card p{
+  color: var(--text-muted);
+  margin-top: 5px;
+}
+
+.card .num{
+  color: var(--text-main);
+  font-size: 25px;
+}
