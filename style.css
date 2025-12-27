@@ -115,10 +115,11 @@ body {
   cursor: pointer;
 }
 
-/* main{
-  margin-left: 260px;
-  padding: 20px;
-} */
+main{
+  /* margin-left: 260px;
+  padding: 20px; */
+  height: 100vh;
+}
 
 main header{
   display: flex;
@@ -227,4 +228,86 @@ main header{
 .card .num{
   color: var(--text-main);
   font-size: 25px;
+}
+
+.tasks{
+  margin-left: 260px;
+  padding: 20px;
+  width: 50%;
+  background: var(--bg-card-soft);
+  border-radius: 30px;
+}
+
+.tasks .task-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tasks .task-title button{
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.tasks .task-title button:hover{
+  color: var(--text-main);
+  scale: 1.01;
+}
+
+.tasks .tasks-list{
+  margin-top: 20px;
+}
+
+.tasks .tasks-list ul{
+  list-style: none;
+}
+
+.tasks .tasks-list ul li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  transition: background .3s ease;
+}
+
+.tasks-list li:hover{
+  background: var(--bg-card);
+}
+
+li input{
+  min-width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid var(--bg-main);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li input:checked{
+  background-color: var(--success);
+}
+
+.tasks .task-title h4{
+  font-size: 18px;
+}
+
+.tasks-list .list-title p{
+  color: var(--text-muted);
+}
+
+li input:checked + .list-title h4{
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+li input:checked + .list-title p{
+  color: var(--text-muted);
 }
